@@ -1,0 +1,96 @@
+:root{
+    /*Variables for light theme colors*/
+    --bg-pri : #EFEFEF;
+    --text-pri: #0E0E0E;
+    --blue : #1580FF;
+    --cyan: #08f7ff;
+    --orange: #b05101; 
+
+    /*Generic Radii and Borders/Weights*/
+    --btn: 5px;
+
+
+    /*Font config/format*/
+    --highlighted: 700;
+    --serif: 400;
+    --note: 300;
+
+    /*Animation config setup*/
+
+    --blink-speed: 1500ms;
+    
+}
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #EFEFEF, #CCCCFE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+
+}
+
+
+
+.custom-nav-link{
+    /*Some Customiztions*/
+}
+
+.custom-small-hightlight{
+    font-weight: var(--highlighted);
+}
+
+.custom-header-font-size{
+    font-size: 2.5em;
+}
+
+.custom-serif-font-size{
+    font-size: 1em;
+}
+
+.custom-serif-font-weight{
+    font-weight: 500;
+}
+
+
+#modal-image{
+    cursor: not-allowed;
+}
+
+/*The Blink Marque Alternative....*/
+
+.custom-blink-tool{
+    background-color: #42c5af;
+    animation: blink var(--blink-speed);
+    animation-iteration-count: 100;
+}
+
+@keyframes blink {
+    from {background-color: #42c5af;}
+    to {background-color: #ccbe70;}
+  }
+
+svg{
+    cursor: pointer;
+}
+
+/*Custom Transperancy Config For The Cards*/
+.custom-transperancy{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.custom-transperancy:hover{
+    opacity: 0.5;
+}
+
+

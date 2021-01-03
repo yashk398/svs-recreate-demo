@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--Fonts-->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!--EXTERNAL-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/custom.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">SVS India</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link custom-nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link custom-nav-link" href="ourteam.html">Our Team</a>
+            <a class="nav-link custom-nav-link" href="photogallery.html">Photo Gallery</a>
+            <a class="nav-link active custom-nav-link" href="contactus.html">Contact Us</a>
+            <a class="nav-link custom-nav-link" href="donations.html">Donations</a>
+            <a class="nav-link custom-nav-link" href="press.html">Press</a>
+          </div>
+        </div>
+    </nav>
+
+    <!--MARQUE THINGIES-->
+    <div class="alert alert-primary alert-dismissible fade show custom-blink-tool" role="alert">
+        SVS India has started the adult literacy program in <strong>Sanjay Gandhi Vasahat, Pashan, Pune.</strong>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" onclick="window.location.href='http://svsindia.org.in/'"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 custom-header-font-size">Contact us</h1>
+          <p class="lead custom-serif-font-size custom-serif-font-weight">You can contact us with the following contact-details</p>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <!--Phone and Mail Details-->
+                <div class="col-sm-6">
+                    <div class="media">
+                        <img src="/icons/contact.svg" class="mr-3" alt="...">
+                        <div class="media-body">
+                          <h5 class="mt-0">Call us</h5>
+                          <a href="tel:9422515760" class="custom-href">9422515760</a>
+                          <hr>
+                          <h5 class="mt-0">Write to us on mail</h5>
+                          <a href="mailto:contact@svsindia.org.in" class="custom-href">contact@svsindia.org.in</a>
+                          <br>
+                          <a href="mailto:anand@svsindia.org.in" class="custom-href">anand@svsindia.org.in</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Feedback Form-->
+                <div class="col-sm-6">
+                    <form>
+                        <h5 class="mt-0">Feedback Form</h5>
+                        <hr>
+                        <div class="form-group">
+                          <label for="emailInput">Email address</label>
+                          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="nameInput">Name</label>
+                          <input type="text" class="form-control" id="nameInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="subjectInput">Subject</label>
+                            <input type="text" class="form-control" id="subjectInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneInput">Phone</label>
+                            <input type="text" class="form-control" id="phoneInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput">Message</label>
+                            <input type="text" class="form-control" id="messageInput" style="height:5em">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Subscribe to mail based newsletters.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-danger">Clear</button>
+                      </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <!--Phone and Mail Details-->
+                <div class="col-sm-12">
+                    <div class="container">
+                        <h5>Address</h5>
+                        <p>Flat B-13, Suvarna Park Soc.,
+                            Behind Maratha Mandir,
+                            Bavdhan-Khurd, Pune- 411 021
+                            </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30268.29252683298!2d73.74776066089731!3d18.50463959475484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be5eb7d345d3%3A0xf0109d3c84119787!2sBavdhan%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1609683381482!5m2!1sen!2sin" width=100% height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+
+            <p class="custom-small-highlight">Copyright 2014. Sarvangin Vikas Sanstha</p>
+
+        </div>
+    </div>
+</body>
+</html>
